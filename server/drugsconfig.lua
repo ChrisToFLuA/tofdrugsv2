@@ -7,21 +7,21 @@ rs('tofdrugs:configsrv', function()
 -------------- general parameters -----------------
 ---------------------------------------------------
 Options =  {}
-Options.Debug = true                -- Config here the debug mode (true | false)
-Options.afkf = true     -- config if the afk farm is allow (true | false)
-Options.inventory = 'oxinventory'-- config your inventory here (oxinventory | default)
-Options.oxtarget = true         -- config if you want to use oxtarget
+Options.Debug = false               -- Config here the debug mode (true | false)
+Options.afkf = false                -- config if the afk farm is allow (true | false)
+Options.inventory = 'default'       -- config your inventory here (oxinventory | default)
+Options.oxtarget = false            -- config if you want to use oxtarget
 
-Options.mincopsh = 0            -- config here the minimum number of cops to harvest
-Options.mincopsc = 0             -- config here the minimum number of cops to craft
-Options.mincopss = 0             -- config here the minimum number of cops to sell to narcos
-Options.mincopsnpc = 0          -- config here the minimum number of cops to sell to npc
+Options.mincopsh = 0                -- config here the minimum number of cops to harvest
+Options.mincopsc = 0                -- config here the minimum number of cops to craft
+Options.mincopss = 0                -- config here the minimum number of cops to sell to narcos
+Options.mincopsnpc = 0              -- config here the minimum number of cops to sell to npc
 
-Options.alertlspdw = 10        -- config here the % of chance that cops will be alerted when there's wholesale sell
-Options.alertlspdnpc = 20        -- config here the % of chance that cops will be alerted when there's npc sell
-Options.delayblip = 60000    -- config here the delay of the blip lspd when there' npc sell
+Options.alertlspdw = 10             -- config here the % of chance that cops will be alerted when there's wholesale sell
+Options.alertlspdnpc = 20           -- config here the % of chance that cops will be alerted when there's npc sell
+Options.delayblip = 60000           -- config here the delay of the blip lspd when there' npc sell
 
-Options.nonpc = 20              -- config here the % of chance that npc refuse a sell
+Options.nonpc = 20                  -- config here the % of chance that npc refuse a sell
 
 ---------------------------------------------------------- WebHook --------------------------------------------------------
 -- it is advisable to create your webhooks on a discord different from the main discord
