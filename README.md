@@ -15,7 +15,7 @@
 
 ## Install
 * Others dependencies and optionnal scripts must start before tofdrugsv2 in the order of the server.cfg
-## Secrutiy
+## Security
 * functions and triggers rewrited
 * tokens to identify resource and client / server actions
 * events server securised
