@@ -5,7 +5,7 @@
 * if you have any problems to use it, active Options.Debug in config.
 * video preview : https://www.youtube.com/watch?v=zF6-1DPqsbM&ab_channel=ChriSToF-LUAScripts-Fivem-ReDM
 * discord : https://discord.gg/B45FXcrqCt 
-* forum : 
+* forum : https://forum.cfx.re/t/free-complete-drugs-script-v2-fully-configurable-esx-legacy-0-02-ms/4928306/2
 ## Dependencies
 * toflib : https://github.com/ChrisToFLuA/toflib/releases
 * ox_lib : https://github.com/overextended/ox_lib/releases
