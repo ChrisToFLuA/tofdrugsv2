@@ -22,7 +22,7 @@ rc('tofdrugs:configcli', function(debug, afk, oxt, drugsharvest, drugscraft, dru
     harvestdgscfg = {}
     craftdgscfg = {}
     sellnarcosdgscfg = {}
-    debug = debug
+    debugdgscfg = debug
     afkdgscfg = afk
     oxtdgscfg = oxt
     harvestdgscfg = drugsharvest
@@ -41,7 +41,7 @@ end)
 rc('tofdrugs:tpcfg',function()
     if tpcfg == true then
         te('tofdrugs:tppoints')
-        if debug then print('^2[DEBUG]^7 - generated TP Points') end
+        if debugdgscfg == true then print('^2[DEBUG]^7 - generated TP Points') end
     end
 end)
 
@@ -54,10 +54,10 @@ rc('tofdrugs:playerdata', function()
         target(craftdgscfg)
         target(sellnarcosdgscfg)
     end
-    if debug then print('^2[DEBUG]^7 - generated markers') end
+    if debugdgscfg == true then print('^2[DEBUG]^7 - generated markers') end
     te('tofdrugs:pedinfront')
     te('tofdrugs:loopnpc')
-    if debug then print('^2[DEBUG]^7 - started loops NPC') end
+    if debugdgscfg == true then print('^2[DEBUG]^7 - started loops NPC') end
 end)
 
 rc('onResourceStart', function(resourceName)
