@@ -12,6 +12,11 @@
 
 ## Install
 * Others dependencies and optionnal scripts must start before tofdrugsv2 in the order of the server.cfg
+## Secrutiy
+* functions and triggers rewrited
+* tokens to identify resource and client / server actions
+* events server securised
+* it's not fort knox, but it makes it harder for little kids who like to cheat and research triggers.
 
 ## Config /server/drugsconfig.lua
 ### general parameters
