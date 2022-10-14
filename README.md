@@ -1,6 +1,7 @@
 # tofdrugsv2
 * Complete Drugs System with security tokens and other features
 * Resmon : 0.02 ms
+* 7 drugs, recipes and effects preconfigured ! you have just to change points or you can custom all drugs as you like ;-)
 
 ## Dependencies
 * toflib : https://github.com/ChrisToFLuA/toflib/releases
@@ -16,6 +17,7 @@
 * functions and triggers rewrited
 * tokens to identify resource and client / server actions
 * events server securised
+* just restart the resource and tokens change if you need (tokens are generated at every restart of your server or of your resource.
 * it's not fort knox, but it makes it harder for little kids who like to cheat and research triggers.
 
 ## Config /server/drugsconfig.lua
