@@ -3,7 +3,9 @@
 * Resmon : 0.02 ms
 * 7 drugs, recipes and effects preconfigured ! you have just to change points or you can custom all drugs as you like ;-)
 * if you have any problems to use it, active Options.Debug in config.
-
+* video preview : https://www.youtube.com/watch?v=zF6-1DPqsbM&ab_channel=ChriSToF-LUAScripts-Fivem-ReDM
+* discord : https://discord.gg/B45FXcrqCt 
+* forum : 
 ## Dependencies
 * toflib : https://github.com/ChrisToFLuA/toflib/releases
 * ox_lib : https://github.com/overextended/ox_lib/releases
