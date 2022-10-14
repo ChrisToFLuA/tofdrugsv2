@@ -7,6 +7,7 @@
 ## Dependencies
 * toflib : https://github.com/ChrisToFLuA/toflib/releases
 * ox_lib : https://github.com/overextended/ox_lib/releases
+* ESX Legacy
 
 ## Compatible with
 * ox_inventory : https://github.com/overextended/ox_inventory/releases
