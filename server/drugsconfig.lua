@@ -7,10 +7,10 @@ rs('tofdrugs:configsrv', function()
 -------------- general parameters -----------------
 ---------------------------------------------------
 Options =  {}
-Options.Debug = true                -- Config here the debug mode (true | false)
-Options.afkf = true     -- config if the afk farm is allow (true | false)
-Options.inventory = 'oxinventory'-- config your inventory here (oxinventory | default)
-Options.oxtarget = true         -- config if you want to use oxtarget
+Options.Debug = false                -- Config here the debug mode (true | false)
+Options.afkf = false     -- config if the afk farm is allow (true | false)
+Options.inventory = 'default'-- config your inventory here (oxinventory | default)
+Options.oxtarget = false         -- config if you want to use oxtarget
 
 Options.mincopsh = 0            -- config here the minimum number of cops to harvest
 Options.mincopsc = 0             -- config here the minimum number of cops to craft
