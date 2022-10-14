@@ -41,3 +41,50 @@ Options.webhook = true
 Options.webhookcheat = 'https://discord.com/api/webhooks/1029500625890857051/61XVRkRpSq6YRKaNAxMB3vuOjH1ShzbHDhKzSmaeL8RRhb79hgrP0H54KkkFhHxYMRxl'
 Options.webhookstat = 'https://discord.com/api/webhooks/1029500625890857051/61XVRkRpSq6YRKaNAxMB3vuOjH1ShzbHDhKzSmaeL8RRhb79hgrP0H54KkkFhHxYMRxl'
 ```
+### harvest item example
+* you can use marker or ped, you can modify coord, quantity, timer etc.
+```
+{item = 'drug_cannabis', label = 'Weed', qty = 6, timer = 60000, coord = {x = 325.19, y = 6626.65, z = 28.71, h = 0.00}, ped = false, type = 'a_m_m_rurmeth_01', marker = 31, act = 'harvest'},
+```
+### Labo example
+* you can use marker or ped, you can modify coord, timer etc.
+```
+{item = 'drug_lean', label = 'Lean', timer = 30000, coord = {x = -1363.08, y = -756.03, z = 22.31, h = 274.960}, ped = false, type = 'a_m_m_rurmeth_01', marker = 31, act ='craft'},
+```
+### craft recipes example
+* you can use marker or ped, you can modify coord, quantity, timer etc.
+* never remove empty fields
+```
+{item = 'drug_lean', label = 'Lean', qtyfinal = 6, item1 = 'codein', item2 = 'ice', item3 = 'drink_sprunk', item4 = '', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 0, qty5 = 0, qty6 = 0, act ='craft'},
+```
+### sell to Narcos example
+* you can use marker or ped, you can modify coord, quantity, timer etc.
+```
+{item = 'drug_cannabis', label = 'Weed', pricemin = 40, pricemax = 50, qtysell = 100, timer = 60000, coord = {x = -1691.27, y = -1071.257, z = 1.831, h = 141.732}, ped = true, type = 'a_m_m_og_boss_01', marker = 31, act ='sell'},
+```
+### sell to NPC
+* you can modify all fields
+```
+{item = 'drug_cannabis', label = 'Weed', pricemin = 75, pricemax = 90, timer = 15000, act ='sellnpc'},
+```
+### integrate teleport functionnality
+* you can modify all fields
+```
+---------------------------------------------------- Teleport functions ---------------------------------------------------
+-- configure here zones of teleportation
+-- entdepart => starting point for entry -------- entarriv => arrival point for entry
+-- exitdepart => starting point for exit -------- exitarriv => arrival point for exit
+-- ==> DO NOT OVERLAP THE POINTS
+---------------------------------------------------------------------------------------------------------------------------
+
+Options.teleport = true                 -- (true | false)
+
+tppoints = {
+    ---------------------------------------------------------------------------------------------------------------------------
+    {zone = 'zone1', entdepart = {x= 723.38,y=-697.98,z=27.54}, entarriv = {x=998.64,y=-3195.60,z=-38.39}, exitdepart = {x=996.82,y=-3200.56,z=-37.39}, exitarriv = {x=723.41,y=-706.36,z=25.73}},
+    ---------------------------------------------------------------------------------------------------------------------------
+    {zone = 'zone2', entdepart = {x=1207.47,y=-3122.56,z=4.54}, entarriv = {x=1088.69,y=-3191.37,z=-39.99}, exitdepart = {x=1088.68,y=-3187.56,z=-39.99}, exitarriv = {x=1203.04,y=-3119.71,z=4.54}},
+    ---------------------------------------------------------------------------------------------------------------------------
+ }
+
+```
