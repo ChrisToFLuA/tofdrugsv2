@@ -2,6 +2,7 @@
 * Complete Drugs System with security tokens and other features
 * Resmon : 0.02 ms
 * 7 drugs, recipes and effects preconfigured ! you have just to change points or you can custom all drugs as you like ;-)
+* if you have any problems to use it, active Options.Debug in config.
 
 ## Dependencies
 * toflib : https://github.com/ChrisToFLuA/toflib/releases
