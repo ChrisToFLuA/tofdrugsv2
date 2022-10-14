@@ -43,27 +43,31 @@ Options.webhookstat = 'https://discord.com/api/webhooks/1029500625890857051/61XV
 ```
 ### harvest item example
 * you can use marker or ped, you can modify coord, quantity, timer etc.
+* don't modify 'act' at the end of lines.
 ```
 {item = 'drug_cannabis', label = 'Weed', qty = 6, timer = 60000, coord = {x = 325.19, y = 6626.65, z = 28.71, h = 0.00}, ped = false, type = 'a_m_m_rurmeth_01', marker = 31, act = 'harvest'},
 ```
 ### Labo example
 * you can use marker or ped, you can modify coord, timer etc.
+* don't modify 'act' at the end of lines.
 ```
 {item = 'drug_lean', label = 'Lean', timer = 30000, coord = {x = -1363.08, y = -756.03, z = 22.31, h = 274.960}, ped = false, type = 'a_m_m_rurmeth_01', marker = 31, act ='craft'},
 ```
 ### craft recipes example
 * you can use marker or ped, you can modify coord, quantity, timer etc.
 * never remove empty fields
+* don't modify 'act' at the end of lines.
 ```
 {item = 'drug_lean', label = 'Lean', qtyfinal = 6, item1 = 'codein', item2 = 'ice', item3 = 'drink_sprunk', item4 = '', item5 = '', item6 = '', qty1 = 6, qty2 = 6, qty3 = 6, qty4 = 0, qty5 = 0, qty6 = 0, act ='craft'},
 ```
 ### sell to Narcos example
 * you can use marker or ped, you can modify coord, quantity, timer etc.
+* don't modify 'act' at the end of lines.
 ```
 {item = 'drug_cannabis', label = 'Weed', pricemin = 40, pricemax = 50, qtysell = 100, timer = 60000, coord = {x = -1691.27, y = -1071.257, z = 1.831, h = 141.732}, ped = true, type = 'a_m_m_og_boss_01', marker = 31, act ='sell'},
 ```
 ### sell to NPC
-* you can modify all fields
+* don't modify 'act' at the end of lines.
 ```
 {item = 'drug_cannabis', label = 'Weed', pricemin = 75, pricemax = 90, timer = 15000, act ='sellnpc'},
 ```
@@ -86,5 +90,46 @@ tppoints = {
     {zone = 'zone2', entdepart = {x=1207.47,y=-3122.56,z=4.54}, entarriv = {x=1088.69,y=-3191.37,z=-39.99}, exitdepart = {x=1088.68,y=-3187.56,z=-39.99}, exitarriv = {x=1203.04,y=-3119.71,z=4.54}},
     ---------------------------------------------------------------------------------------------------------------------------
  }
+```
+### Manage Items in Database with script
+```
+---------------------------------------------------------------------------------------------------------------------------
+-- configure here if you want the script manage the item's script in DB, so you will modify here the field of these items
+-- and the script manage the update and the creation of these items in your database.
+-- ** the database must contain at least fields : 'name' - 'label' - 'weight' **
+---------------------------------------------------------------------------------------------------------------------------
+-- if you use ox_inventory, the tremendous work of the overextended team means that the ox_inventory will automatically
+-- download new items added to the db into the items.lua file.
+---------------------------------------------------------------------------------------------------------------------------
 
+Options.ManageDB = false     -- (true | false)
+
+itemstocreate = {
+    -------------------------------------------------------------------- Items BDD -------------------------------------------------------------------
+    {name = 'drug_cannabis', label = 'Weed', weight = 100},
+    {name = 'drug_opium', label = 'Opium', weight = 100},
+    {name = 'drug_lean', label = 'Lean', weight = 100},
+    {name = 'drug_cocaine', label = 'Cocaine', weight = 100},
+    {name = 'drug_lsd', label = 'LSD', weight = 100},
+    {name = 'drug_ecstasy', label = 'Ecstasy', weight = 50},
+    {name = 'drug_meth', label = 'Methamphetamine', weight = 100},
+    {name = 'codein', label = 'Codeine', weight = 50},
+    {name = 'ice', label = 'ice', weight = 50},
+    {name = 'drink_sprunk', label = 'Sprunk', weight = 50},
+    {name = 'cocaleaves', label = 'Coca Leaves', weight = 50},
+    {name = 'gasoline', label = 'Gasoline', weight = 50},
+    {name = 'solvent', label = 'Solvent', weight = 50},
+    {name = 'carbon', label = 'Carbon', weight = 50},
+    {name = 'hydrogen', label = 'Hydrogen', weight = 50},
+    {name = 'oxygen', label = 'Oxygen', weight = 50},
+    {name = 'nitrogen', label = 'Nitrogen', weight = 50},
+    {name = 'jolly_ranchers', label = 'Jolly ranchers', weight = 50},
+    {name = 'red_sulfur', label = 'Red sulfur', weight = 50},
+    {name = 'liquid_sulfur', label = 'Liquid sulfur', weight = 50},
+    {name = 'muriatic_acid', label = 'Muriatic acid', weight = 50},
+    {name = 'ammonium_nitrate', label = 'Ammonium nitrate', weight = 50},
+    {name = 'sodium_hydroxide', label = 'Sodium hydroxide', weight = 50},
+    {name = 'pseudoefedrine', label = 'Pseudoefedrine', weight = 50},
+    --------------------------------------------------------------------------------------------------------------------------------------------------
+}
 ```
