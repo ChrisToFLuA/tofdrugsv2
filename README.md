@@ -6,19 +6,8 @@
 * video preview : https://www.youtube.com/watch?v=zF6-1DPqsbM&ab_channel=ChriSToF-LUAScripts-Fivem-ReDM
 * discord : https://discord.gg/B45FXcrqCt 
 * forum : https://forum.cfx.re/t/free-complete-drugs-script-v2-fully-configurable-esx-legacy-0-02-ms/4928306/2
-# **Release 1.1.0**
-* keep the old drugsconfig.lua and replace the other script files
-* add in the old drugsconfig.lua line 143 : 
-```
-------------------------------------------------------- Interaction NPC ---------------------------------------------------
--- configure here the zones without interactions with the npc
----------------------------------------------------------------------------------------------------------------------------
 
-zonenointeract = {
-    {name = 'lspd', coord = {x = 446.6769, y = -984.1450, z = 30.6783}, radius = 30},
-    {name = 'hospital', coord = {x = 341.4593, y = -1397.6702, z = 32.4981}, radius = 100},
-}
-```
+## **Release 1.1.0** >> https://github.com/ChrisToFLuA/tofdrugsv2/releases/tag/v1.1.0
 
 # Wiki
 * https://github.com/ChrisToFLuA/tofdrugsv2/wiki
