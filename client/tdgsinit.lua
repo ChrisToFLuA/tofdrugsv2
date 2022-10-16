@@ -17,7 +17,7 @@ rc('tofdrugs:checktof', function()
     ts('tofdrugs:checkcli', act, tkcdgs, actc1dgs, actc2dgs, actc3dgs, actc4dgs, actc5dgs, actc6dgs)
 end)
 
-rc('tofdrugs:configcli', function(debug, afk, oxt, drugsharvest, drugscraft, drugssellnarcos, blipcopsdelay, tp, tppoints)
+rc('tofdrugs:configcli', function(debug, afk, oxt, drugsharvest, drugscraft, drugssellnarcos, zonenoint, blipcopsdelay, tp, tppoints)
     configup = false
     harvestdgscfg = {}
     craftdgscfg = {}
@@ -28,6 +28,7 @@ rc('tofdrugs:configcli', function(debug, afk, oxt, drugsharvest, drugscraft, dru
     harvestdgscfg = drugsharvest
     craftdgscfg = drugscraft
     sellnarcosdgscfg = drugssellnarcos
+    zonenointeract = zonenoint
     delayblipdgscfg = blipcopsdelay
     tpcfg = tp
     pointstp = tppoints

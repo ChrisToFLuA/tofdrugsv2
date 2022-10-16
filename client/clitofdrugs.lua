@@ -267,7 +267,8 @@ end)
 
 rc('tofdrugs:blip', function(coordP, id)
     if debugdgscfg == true then print('^2[DEBUG]^7 - started ^3Blip Diffusion ^2[Done]^7') end
-	if trackingBlip[id] then
+	local trackingBlip = {}
+    if trackingBlip[id] then
 		SetBlipCoords(trackingBlip[id], coordP.x, coordP.y, coordP.z)
 	else
 		trackingBlip[id] = AddBlipForCoord(coordP.x, coordP.y, coordP.z)
@@ -464,6 +465,14 @@ function GetPedInFront()
 	local rayHandle = StartShapeTestCapsule(plyPos.x, plyPos.y, plyPos.z, plyOffset.x, plyOffset.y, plyOffset.z, 3.0, 12, plyPed, 7)
     local _, _, _, _, ped = GetShapeTestResult(rayHandle)
     local pedv = NetworkGetNetworkIdFromEntity(ped)
+    allowact = 0
+    for k,v in ipairs(zonenointeract) do
+        local dist = distcoord(ped, v.coord)
+        if dist <= v.radius then
+            allowact = allowact + 1
+        end
+    end
+    if allowact > 0 then pedtoact = false end
     if drugpeds ~= {} then
         for k,v in ipairs(drugpeds) do
             local peddgs = v

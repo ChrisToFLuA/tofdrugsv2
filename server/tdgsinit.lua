@@ -86,7 +86,7 @@ rs('tofdrugs:configsendcli', function(source)
     local oxt = Options.oxtarget
     local tp = Options.teleport
     local blipcopsdelay = Options.delayblip
-    tc('tofdrugs:configcli', xPlayer.source, debug, afk, oxt, drugsharvest, drugscraft, drugssellnarcos, blipcopsdelay, tp, tppoints)
+    tc('tofdrugs:configcli', xPlayer.source, debug, afk, oxt, drugsharvest, drugscraft, drugssellnarcos, zonenointeract, blipcopsdelay, tp, tppoints)
     print('^2[CONFIG]^7 Send Config Data to Client ^3ID: ^2'..id..'^7 - ^2'..nameP..'^7')
 end)
 
@@ -104,7 +104,7 @@ rs('tofdrugs:dataplayer', function()
         tc('tofdrugs:playerdata', xPlayer.source)
         if Options.Debug then print('^2[DEBUG]^7 - Your Job ^3allow you to Load Script ^2[DONE]^7') end
     else
-        if Options.Debug then print('^2[DEBUG]^7 - Your Job ^3doesn\'t allow you to Load Script [WARNING]^7') end
+        --if Options.Debug then print('^2[DEBUG]^7 - Your Job ^3doesn\'t allow you to Load Script [WARNING]^7') end
     end
 end)
 

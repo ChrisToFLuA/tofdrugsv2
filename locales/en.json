@@ -14,5 +14,5 @@
     "noitem": "you don't have any on you",
     "nbdrugs": "you don't have any on you",
     "sell": "you have sold ",
-    "selllspd": "ongoing drug sale"
+    "alertlspd": "Ongoing drug sale !"
 }

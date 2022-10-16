@@ -87,18 +87,17 @@ function craftaction_s(source, item, label, timer)
                 end
             end
             if item1remove and item2remove and item3remove and item4remove and item5remove and item6remove then
-                tc('tofdrugs:animharvest', xPlayer.source, timer)
-                tc('tofdrugs:timeranim', xPlayer.source, timer)
-                cw(timer)
                 if item1 then removeitem(xPlayer.source, drugscraftrecipes[z].item1, drugscraftrecipes[z].qty1) end
                 if item2 then removeitem(xPlayer.source, drugscraftrecipes[z].item2, drugscraftrecipes[z].qty2) end
                 if item3 then removeitem(xPlayer.source, drugscraftrecipes[z].item3, drugscraftrecipes[z].qty3) end
                 if item4 then removeitem(xPlayer.source, drugscraftrecipes[z].item4, drugscraftrecipes[z].qty4) end
                 if item5 then removeitem(xPlayer.source, drugscraftrecipes[z].item5, drugscraftrecipes[z].qty5) end
                 if item6 then removeitem(xPlayer.source, drugscraftrecipes[z].item6, drugscraftrecipes[z].qty6) end
-                addItems(xPlayer.source, item, qtyfinale)
-                print('label : '..label)
+                tc('tofdrugs:animharvest', xPlayer.source, timer)
+                tc('tofdrugs:timeranim', xPlayer.source, timer)
+                cw(timer)
                 tc('tofdrugs:notifsdgs', xPlayer.source, 'craftaction', 'success', qtyfinale, label, 0)
+                addItems(xPlayer.source, item, qtyfinale)
                 o = o+1
                 local a = {source, item, qtyfinale}
                 table.insert(crafthook, o, a)
@@ -126,13 +125,13 @@ function sellaction_s(source, item, label, timer)
             local price = math.random(drugssellnarcos[z].pricemin, drugssellnarcos[z].pricemax)
             if itemcount and itemcount >= drugssellnarcos[z].qtysell then
                 local pay = (drugssellnarcos[z].qtysell * price)
+                removeitem(xPlayer.source, item, drugssellnarcos[z].qtysell)
                 tc('tofdrugs:animsell', xPlayer.source, timer)
                 tc('tofdrugs:timeranim', xPlayer.source, timer)
                 if alertlspd <= Options.alertlspdw then
                     tc('tofdrugs:alertlspd_c', xPlayer.source)
                 end
                 cw(timer)
-                removeitem(xPlayer.source, item, drugssellnarcos[z].qtysell)
                 tc('tofdrugs:notifsdgs', xPlayer.source, 'sellaction', 'inform', drugssellnarcos[z].qtysell, drugssellnarcos[z].label, pay)
                 xPlayer.addAccountMoney('black_money', pay)
                 p = p+1
@@ -140,13 +139,13 @@ function sellaction_s(source, item, label, timer)
                 table.insert(sellwhook, p, a)
             elseif itemcount and itemcount > 0 then
                 local pay = (itemcount * price)
+                removeitem(xPlayer.source, item, itemcount)
                 tc('tofdrugs:animsell', xPlayer.source, timer)
                 tc('tofdrugs:timeranim', xPlayer.source, timer)
                 if alertlspd <= Options.alertlspdw then
                     tc('tofdrugs:alertlspd_c', xPlayer.source)
                 end
                 cw(timer)
-                removeitem(xPlayer.source, item, itemcount)
                 p = p+1
                 local a = {source, item, itemcount, pay}
                 table.insert(sellwhook, p, a)

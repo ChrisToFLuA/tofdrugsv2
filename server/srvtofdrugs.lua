@@ -184,6 +184,7 @@ rs('tofdrugs:actionsellnpcqtoff_s', function(tkcdgs, act, item, lblitem, count, 
             print('^2[TK]^7 AcTChecK - Event ** Drugs Action Sell NPC ** ^2[OK]^7 ID: ^2'..id..'^7 - ^2'..nameP..'^7')
         end
         if act == act4dgs then
+            removeitem(xPlayer.source, item, count)
             if xPlayer then
                 tc('tofdrugs:animsellnpc', xPlayer.source, timer, entity)
                 tc('tofdrugs:timeranim', xPlayer.source, timer)
@@ -192,7 +193,6 @@ rs('tofdrugs:actionsellnpcqtoff_s', function(tkcdgs, act, item, lblitem, count, 
                 end
             end
             cw(timer)
-            removeitem(xPlayer.source, item, count)
             tc('tofdrugs:notifsdgs', xPlayer.source, 'sell', 'success', count, lblitem, pay)
             xPlayer.addAccountMoney('black_money', pay)
             q = q+1
