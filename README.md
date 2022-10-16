@@ -7,7 +7,7 @@
 * discord : https://discord.gg/B45FXcrqCt 
 * forum : https://forum.cfx.re/t/free-complete-drugs-script-v2-fully-configurable-esx-legacy-0-02-ms/4928306/2
 
-## **Release 1.1.0** >> https://github.com/ChrisToFLuA/tofdrugsv2/releases/tag/v1.1.0
+#### **Release 1.1.0** >> https://github.com/ChrisToFLuA/tofdrugsv2/releases/tag/v1.1.0
 
 # Wiki
 * https://github.com/ChrisToFLuA/tofdrugsv2/wiki
