@@ -3,7 +3,11 @@
 * Resmon : 0.02 ms
 * 7 drugs, recipes and effects preconfigured ! you have just to change points or you can custom all drugs as you like ;-)
 * if you have any problems to use it, active Options.Debug in config.
-
+* video preview : https://www.youtube.com/watch?v=zF6-1DPqsbM&ab_channel=ChriSToF-LUAScripts-Fivem-ReDM
+* discord : https://discord.gg/B45FXcrqCt 
+* forum : https://forum.cfx.re/t/free-complete-drugs-script-v2-fully-configurable-esx-legacy-0-02-ms/4928306/2
+# Wiki
+* https://github.com/ChrisToFLuA/tofdrugsv2/wiki
 ## Dependencies
 * toflib : https://github.com/ChrisToFLuA/toflib/releases
 * ox_lib : https://github.com/overextended/ox_lib/releases
@@ -15,7 +19,7 @@
 
 ## Install
 * Others dependencies and optionnal scripts must start before tofdrugsv2 in the order of the server.cfg
-## Secrutiy
+## Security
 * functions and triggers rewrited
 * tokens to identify resource and client / server actions
 * events server securised
