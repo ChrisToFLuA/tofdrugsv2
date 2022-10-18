@@ -1,5 +1,5 @@
 # tofdrugsv2
-### Tebex link For FREE : https://titoff-prod.tebex.io/category/free-scripts
+### Download link For FREE : https://titoff-prod.tebex.io/category/free-scripts
 * Complete Drugs System with security tokens and other features
 * Resmon : 0.02 ms
 * 7 drugs, recipes and effects preconfigured ! you have just to change points or you can custom all drugs as you like ;-)
